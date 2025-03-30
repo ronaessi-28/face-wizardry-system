@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// New Face Wizardry System color scheme
+				face: {
+					primary: '#0EA5E9',    // Bright blue
+					secondary: '#8B5CF6',  // Vivid purple
+					accent: '#F97316',     // Bright orange 
+					background: '#F1F0FB', // Soft purple background
+					success: '#10B981',    // Green for successful recognition
+					error: '#EF4444',      // Red for failed recognition
+					dark: '#1A1F2C',       // Dark purple for text
+					light: '#FFFFFF',      // White
 				}
 			},
 			borderRadius: {
@@ -84,11 +96,23 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-ring': {
+					'0%': { transform: 'scale(0.8)', opacity: '0.8' },
+					'50%': { transform: 'scale(1.1)', opacity: '0.4' },
+					'100%': { transform: 'scale(0.8)', opacity: '0.8' }
+				},
+				'scanning': {
+					'0%': { transform: 'translateY(0%)', opacity: '0.5' },
+					'50%': { transform: 'translateY(100%)', opacity: '0.8' },
+					'100%': { transform: 'translateY(0%)', opacity: '0.5' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-ring': 'pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'scanning': 'scanning 2s ease-in-out infinite'
 			}
 		}
 	},
