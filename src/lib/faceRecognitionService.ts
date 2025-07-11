@@ -1,6 +1,6 @@
 
 import * as faceapi from '@vladmandic/face-api';
-
+ 
 // This class provides face recognition functionality
 export class FaceRecognitionService {
   private faceDetectionNet: faceapi.SsdMobilenetv1;
