@@ -1,5 +1,5 @@
 
-# Face Recognition Models
+# Face Recognition Models 
 
 For this face recognition system to work properly, you'll need to download face-api.js models and place them in the `public/models` directory.
 
